@@ -1,5 +1,5 @@
 const conv = (funcString) => {
-  // Solution was done only using string functions, without array of Regex.
+  // Solution was done only using string functions
   let newFuncString = '';
 
   if (funcString.startsWith('function')) {
