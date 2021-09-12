@@ -21,11 +21,11 @@ const conv = (funcString) => {
   return newFuncString;
 }
 
-console.log(conv("function () {}")); // "() => {}"
-console.log(conv("function jstify() {}" )); // "const jstify = () => {}"
-console.log(conv("function jstify(str) { console.log(str); }")); // "const jstify = (str) => { console.log(str); }"
-console.log(conv("() => {}")); // "function () {}"
-console.log(conv("const jstify = () => {}")); // "function jstify() {}"
-console.log(conv("let jstify = (str) => { console.log(str); }")); // "function jstify(str) { console.log(str); }"
-console.log(conv("var jstify = (str) => { console.log(str); }")); // "function jstify(str) { console.log(str); }"
-console.log(conv("jstify = (str) => { console.log(str); }")); // "function jstify(str) { console.log(str); }"
+conv("function () {}"); // "() => {}"
+conv("function jstify() {}" ); // "const jstify = () => {}"
+conv("function jstify(str) { console.log(str); }"); // "const jstify = (str) => { console.log(str); }"
+conv("() => {}"); // "function () {}"
+conv("const jstify = () => {}"); // "function jstify() {}"
+conv("let jstify = (str) => { console.log(str); }"); // "function jstify(str) { console.log(str); }"
+conv("var jstify = (str) => { console.log(str); }"); // "function jstify(str) { console.log(str); }"
+conv("jstify = (str) => { console.log(str); }"); // "function jstify(str) { console.log(str); }"
